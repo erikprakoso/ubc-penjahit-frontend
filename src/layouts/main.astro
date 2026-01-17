@@ -1,16 +1,85 @@
 ---
-import '../styles/global.css';
-const { content } = Astro.props;
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
+import NoiseOverlay from "../components/animations/NoiseOverlay";
+import "../styles/global.css";
+
+const { content = {} } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="id">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>
+			{content.title || "Udin Busana Collection - Penjahit & Seragam"}
+		</title>
+		<meta
+			name="description"
+			content={content.description ||
+				"Udin Busana Collection - Penjahit Seragam, Kebaya, Jas, dan Batik di Grobogan. Kualitas terbaik untuk kebutuhan busana Anda."}
+		/>
+		<meta
+			name="keywords"
+			content={content.keywords ||
+				"penjahit, penjahit grobogan, udin busana collection, penjahit seragam, jahit jas, jahit kebaya, penjahit terdekat"}
+		/>
+		<meta name="author" content="Udin Busana Collection" />
+		<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta
+			property="og:title"
+			content={content.title ||
+				"Udin Busana Collection - Penjahit & Seragam"}
+		/>
+		<meta
+			property="og:description"
+			content={content.description ||
+				"Udin Busana Collection - Penjahit Seragam, Kebaya, Jas, dan Batik di Grobogan. Kualitas terbaik untuk kebutuhan busana Anda."}
+		/>
+		<meta
+			property="og:image"
+			content={new URL(content.image || "/og-image.jpg", Astro.site)}
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta
+			property="twitter:title"
+			content={content.title ||
+				"Udin Busana Collection - Penjahit & Seragam"}
+		/>
+		<meta
+			property="twitter:description"
+			content={content.description ||
+				"Udin Busana Collection - Penjahit Seragam, Kebaya, Jas, dan Batik di Grobogan. Kualitas terbaik untuk kebutuhan busana Anda."}
+		/>
+		<meta
+			property="twitter:image"
+			content={new URL(content.image || "/og-image.jpg", Astro.site)}
+		/>
 	</head>
-	<body>
-		<slot />
+	<body
+		class="font-sans antialiased bg-background text-foreground min-h-screen flex flex-col"
+	>
+		<NoiseOverlay client:load />
+		<Header client:load />
+		<main class="flex-1">
+			<slot />
+		</main>
+		<Footer />
+		<FloatingWhatsApp client:load />
 	</body>
 </html>

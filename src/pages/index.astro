@@ -1,25 +1,22 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
+import Layout from "../layouts/main.astro";
+import Hero from "../components/Hero";
+import AboutSection from "../components/AboutSection";
+import ServicesSection from "../components/ServicesSection";
+import GallerySection from "../components/GallerySection";
+import TestimonialsSection from "../components/TestimonialsSection";
+import LocationSection from "../components/LocationSection";
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+const content = {
+	title: "Udin Busana Collection - Premium Tailor & Uniforms",
+};
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
-
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+<Layout content={content}>
+	<Hero client:load />
+	<AboutSection client:visible />
+	<ServicesSection client:visible />
+	<GallerySection client:visible />
+	<TestimonialsSection client:visible />
+	<LocationSection client:visible />
+</Layout>
