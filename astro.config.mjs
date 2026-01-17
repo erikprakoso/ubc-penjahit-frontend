@@ -9,10 +9,10 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://udinbusanacollection.com', // TODO: Replace with your actual domain
+  site: 'https://www.ubc.my.id', // TODO: Replace with your actual domain
   vite: {
-      plugins: [tailwindcss()],
-	},
+    plugins: [tailwindcss()],
+  },
 
   integrations: [react(), sitemap()],
 });

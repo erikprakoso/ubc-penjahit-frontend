@@ -70,6 +70,8 @@ const { content = {} } = Astro.props;
 			property="twitter:image"
 			content={new URL(content.image || "/og-image.jpg", Astro.site)}
 		/>
+
+		<slot name="head" />
 	</head>
 	<body
 		class="font-sans antialiased bg-background text-foreground min-h-screen flex flex-col"

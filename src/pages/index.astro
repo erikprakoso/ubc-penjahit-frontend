@@ -9,10 +9,55 @@ import LocationSection from "../components/LocationSection";
 
 const content = {
 	title: "Udin Busana Collection - Premium Tailor & Uniforms",
+	description:
+		"Jasa jahit profesional di Grobogan. Spesialis seragam dinas, kebaya, jas, dan batik. Hasil rapi, tepat waktu, dan harga terjangkau.",
+	keywords:
+		"penjahit grobogan, jahit seragam grobogan, penjahit terdekat, udin busana collection, penjahit kebaya, penjahit jas, tailor grobogan, jahit baju dinas",
 };
+
+const schema = JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Tailor",
+	name: "Udin Busana Collection",
+	image: new URL("/logo.jpg", Astro.site),
+	"@id": new URL(Astro.url.pathname, Astro.site),
+	url: new URL(Astro.url.pathname, Astro.site),
+	telephone: "+6285786489297",
+	address: {
+		"@type": "PostalAddress",
+		streetAddress: "Jl. Danyang - Kuwu",
+		addressLocality: "Pulokulon",
+		addressRegion: "Grobogan",
+		postalCode: "58181",
+		addressCountry: "ID",
+	},
+	geo: {
+		"@type": "GeoCoordinates",
+		latitude: -7.1205287,
+		longitude: 110.9963872,
+	},
+	openingHoursSpecification: {
+		"@type": "OpeningHoursSpecification",
+		dayOfWeek: [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday",
+			"Saturday",
+			"Sunday",
+		],
+		opens: "07:00",
+		closes: "17:00",
+	},
+	priceRange: "$$",
+});
 ---
 
 <Layout content={content}>
+	<fragment slot="head">
+		<script type="application/ld+json" set:html={schema} />
+	</fragment>
 	<Hero client:load />
 	<AboutSection client:visible />
 	<ServicesSection client:visible />
