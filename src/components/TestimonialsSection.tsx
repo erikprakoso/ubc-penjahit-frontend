@@ -11,6 +11,7 @@ const reviews = [
     { text: "Memberikan penilaian bintang 5", stars: 5, user: "RadityaEsa Kurniawan" },
     { text: "Memberikan penilaian bintang 5", stars: 5, user: "rokim Grab" },
     { text: "Memberikan penilaian bintang 5", stars: 5, user: "Nursidik Sidik" },
+    { text: "Hasilnya memuaskan, pas di badan dan sesuai dengan keinginan saya.", stars: 5, user: "Erik Prakoso" },
 ];
 
 export default function TestimonialsSection() {
@@ -32,10 +33,20 @@ export default function TestimonialsSection() {
                         <div className="flex items-center justify-center gap-3 mb-4">
                             <span className="text-5xl font-bold text-white">4.8</span>
                             <div className="flex flex-col items-start">
-                                <div className="flex text-yellow-500">
-                                    {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-5 h-5 fill-current" />)}
+                                <div className="flex gap-1">
+                                    {/* 4 Full Stars */}
+                                    {[...Array(4)].map((_, i) => (
+                                        <Star key={i} className="w-5 h-5 fill-yellow-500 text-yellow-500" />
+                                    ))}
+                                    {/* 1 Partial Star (80% filled for 4.8 rating) */}
+                                    <div className="relative">
+                                        <Star className="w-5 h-5 fill-current text-white/20" />
+                                        <div className="absolute top-0 left-0 overflow-hidden" style={{ width: '80%' }}>
+                                            <Star className="w-5 h-5 fill-yellow-500 text-yellow-500" />
+                                        </div>
+                                    </div>
                                 </div>
-                                <span className="text-white/60 text-sm">Berdasarkan 6 Ulasan Google</span>
+                                <span className="text-white/60 text-sm">Berdasarkan Ulasan Google</span>
                             </div>
                         </div>
                     </FadeIn>

@@ -22,13 +22,20 @@ export default function Hero() {
             <div className="container px-4 py-12 md:py-24 relative z-10 flex flex-col items-center text-center gap-8">
                 <FadeIn delay={0.2} direction="down">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 shadow-xl">
-                        <span className="flex gap-1 text-yellow-500">
-                            <Star className="w-4 h-4 fill-current" />
-                            <Star className="w-4 h-4 fill-current" />
-                            <Star className="w-4 h-4 fill-current" />
-                            <Star className="w-4 h-4 fill-current" />
-                            <Star className="w-4 h-4 fill-current" />
-                        </span>
+                        {/* Star Rating Container */}
+                        <div className="flex gap-1">
+                            {/* 4 Full Stars */}
+                            {[...Array(4)].map((_, i) => (
+                                <Star key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
+                            ))}
+                            {/* 1 Partial Star (80% filled for 4.8 rating) */}
+                            <div className="relative">
+                                <Star className="w-4 h-4 fill-current text-white/20" />
+                                <div className="absolute top-0 left-0 overflow-hidden" style={{ width: '80%' }}>
+                                    <Star className="w-4 h-4 fill-yellow-500 text-yellow-500" />
+                                </div>
+                            </div>
+                        </div>
                         <span className="text-sm font-medium text-white/90">Rating 4.8 di Google</span>
                     </div>
                 </FadeIn>

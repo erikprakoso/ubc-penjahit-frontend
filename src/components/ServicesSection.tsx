@@ -1,6 +1,3 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Scissors, Shirt, Ruler, ShoppingBag, CheckCircle2 } from 'lucide-react';
 import FadeIn from './animations/FadeIn';
@@ -93,7 +90,8 @@ export default function ServicesSection() {
                                         "Gamis Syari & Hijab",
                                         "Dress Pesta & Wisuda",
                                         "Blouse & Rok Batik",
-                                        "Busana Casual Premium"
+                                        "Busana Casual Premium",
+                                        "Busana Muslimah"
                                     ].map((item, i) => (
                                         <div key={i} className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
                                             <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
@@ -110,7 +108,8 @@ export default function ServicesSection() {
                                         "Safari & PDH",
                                         "Celana Formal & Chino",
                                         "Baju Koko Eksklusif",
-                                        "Alterasi Jas"
+                                        "Alterasi Jas",
+                                        "Busana Muslim"
                                     ].map((item, i) => (
                                         <div key={i} className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
                                             <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X, MapPin, Phone } from 'lucide-react';
-import { cn } from '@/lib/utils';
 // Assuming Button will be available at this path
 import { Button } from '@/components/ui/button';
 
@@ -21,7 +20,7 @@ export default function Header() {
                 <a href="/" className="flex items-center gap-2">
                     <img src="/logo.jpg" alt="Udin Busana Logo" className="h-12 w-auto rounded-full border border-white/10" />
                     <span className="text-xl font-bold tracking-tight text-white hidden sm:block">
-                        Udin Busana <span className="text-primary italic font-serif">Collection</span>
+                        Udin Busana <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-400 to-orange-400 italic font-serif">Collection</span>
                     </span>
                 </a>
 
@@ -40,13 +39,13 @@ export default function Header() {
 
                 <div className="hidden md:flex items-center gap-4">
                     <Button variant="outline" size="sm" className="bg-transparent border-white/20 text-white hover:bg-white/10 hover:text-white" asChild>
-                        <a href="tel:085786489297" className="flex items-center gap-2 text-white">
+                        <a href="https://wa.me/6285786489297" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white">
                             <Phone className="w-4 h-4" />
                             Telepon
                         </a>
                     </Button>
                     <Button size="sm" asChild>
-                        <a href="https://maps.app.goo.gl/VXHW+PJ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Udin+Busana+Collection" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white">
                             <MapPin className="w-4 h-4" />
                             Kunjungi
                         </a>
@@ -77,7 +76,7 @@ export default function Header() {
                     ))}
                     <div className="flex gap-4 mt-4">
                         <Button className="flex-1" asChild>
-                            <a href="https://maps.app.goo.gl/VXHW+PJ" className="text-white">Peta</a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Udin+Busana+Collection" target="_blank" rel="noopener noreferrer" className="text-white">Peta</a>
                         </Button>
                     </div>
                 </div>

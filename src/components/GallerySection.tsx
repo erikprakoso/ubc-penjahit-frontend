@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 const galleryItems = [
     {
         id: 1,
-        title: "Kebaya Modern",
+        title: "Kebaya & Batik Modern",
         category: "Traditional Wear",
         image: "/batik-kebaya.webp",
         size: "md:col-span-2 md:row-span-2",
@@ -15,8 +15,8 @@ const galleryItems = [
     },
     {
         id: 2,
-        title: "Bespoke Suit",
-        category: "Formal Man",
+        title: "Bridesmaid Series",
+        category: "Party Wear",
         image: "/bridesmaid.webp",
         size: "md:col-span-1 md:row-span-1",
         delay: 0.1,
@@ -24,8 +24,8 @@ const galleryItems = [
     },
     {
         id: 3,
-        title: "Batik Premium",
-        category: "Heritage",
+        title: "Engagement Couple",
+        category: "Special Occasion",
         image: "/batik-kebaya-lamaran.jpg",
         size: "md:col-span-1 md:row-span-1",
         delay: 0.2,
@@ -33,8 +33,8 @@ const galleryItems = [
     },
     {
         id: 4,
-        title: "Office Uniform",
-        category: "Corporate",
+        title: "Classic Menswear",
+        category: "Bespoke Suit",
         image: "/jas-pria.webp",
         size: "md:col-span-1 md:row-span-1",
         delay: 0.3,
@@ -42,8 +42,8 @@ const galleryItems = [
     },
     {
         id: 5,
-        title: "Wedding Dress",
-        category: "Bridal",
+        title: "Premium Batik",
+        category: "Heritage",
         image: "/batik.webp",
         size: "md:col-span-1 md:row-span-1",
         delay: 0.4,
@@ -51,8 +51,8 @@ const galleryItems = [
     },
     {
         id: 6,
-        title: "Wedding Dress",
-        category: "Bridal",
+        title: "Kebaya Wisuda",
+        category: "Graduation",
         image: "/kebaya-wisuda.jpg",
         size: "md:col-span-1 md:row-span-1",
         delay: 0.5,
@@ -60,8 +60,8 @@ const galleryItems = [
     },
     {
         id: 7,
-        title: "Wedding Dress",
-        category: "Bridal",
+        title: "Father & Son Suit",
+        category: "Family Set",
         image: "/jas-pria-dewasa-anak.jpg",
         size: "md:col-span-1 md:row-span-1",
         delay: 0.6,
@@ -69,8 +69,8 @@ const galleryItems = [
     },
     {
         id: 8,
-        title: "Wedding Dress",
-        category: "Bridal",
+        title: "Modest Fashion",
+        category: "Muslim Wear",
         image: "/muslim-wanita.jpg",
         size: "md:col-span-1 md:row-span-1",
         delay: 0.6,
@@ -78,8 +78,8 @@ const galleryItems = [
     },
     {
         id: 9,
-        title: "Wedding Dress",
-        category: "Bridal",
+        title: "Modern Koko",
+        category: "Men's Muslim Wear",
         image: "/baju-muslim.webp",
         size: "md:col-span-1 md:row-span-1",
         delay: 0.6,

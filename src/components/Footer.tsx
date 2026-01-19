@@ -1,6 +1,4 @@
-import React from 'react';
 import { Instagram, Facebook, Phone, MapPin, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 export default function Footer() {
     return (
@@ -13,7 +11,7 @@ export default function Footer() {
                             <img src="/logo.jpg" alt="Udin Busana Logo" className="h-16 w-auto rounded-xl border border-white/10 mb-4" />
                             <h2 className="text-3xl font-serif font-bold text-white tracking-tight">
                                 Udin Busana<br />
-                                <span className="text-primary italic">Collection</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-400 to-orange-400 italic">Collection</span>
                             </h2>
                         </a>
                         <p className="text-lg leading-relaxed max-w-sm text-white/60">

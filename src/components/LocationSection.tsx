@@ -24,7 +24,7 @@ export default function LocationSection() {
                     <div className="bg-stone-900/90 backdrop-blur-xl p-8 md:p-10 rounded-3xl shadow-2xl border border-white/10 md:mr-10 text-white">
                         <h2 className="text-3xl font-serif font-bold tracking-tight mb-2 text-white">Kunjungi Workshop</h2>
                         <p className="text-white/60 mb-8">
-                            Rasakan pengalaman tailoring eksklusif di studio kami.
+                            Rasakan pengalaman tailoring eksklusif di workshop kami.
                         </p>
 
                         <div className="space-y-6">

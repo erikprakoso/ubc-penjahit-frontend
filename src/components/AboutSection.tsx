@@ -16,7 +16,7 @@ export default function AboutSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
                     {/* Image Area - Asymmetrical & Floating */}
                     <div className="lg:col-span-7 relative group">
-                        <div className="absolute -inset-4 bg-gradient-to-r from-primary to-purple-600 opacity-20 blur-3xl rounded-full group-hover:opacity-30 transition-opacity duration-700" />
+                        <div className="absolute -inset-4 bg-gradient-to-r from-primary via-red-400 to-orange-400 opacity-20 blur-3xl rounded-full group-hover:opacity-30 transition-opacity duration-700" />
                         <FadeIn direction="right" className="relative z-10 grid grid-cols-2 gap-4">
                             <div className="space-y-4 mt-12">
                                 <img
@@ -43,10 +43,10 @@ export default function AboutSection() {
                     <div className="lg:col-span-5 space-y-8">
                         <FadeIn delay={0.2}>
                             <div className="relative">
-                                <div className="w-16 h-1 bg-gradient-to-r from-primary to-purple-600 mb-6" />
+                                <div className="w-16 h-1 bg-gradient-to-r from-primary via-red-400 to-orange-400 mb-6" />
                                 <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-white leading-tight">
                                     Seni Menjahit <br />
-                                    <span className="text-white/20">Eksklusif</span>
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-400 to-orange-400">Eksklusif</span>
                                 </h2>
                             </div>
                         </FadeIn>
