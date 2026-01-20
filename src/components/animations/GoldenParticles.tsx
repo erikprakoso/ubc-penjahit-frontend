@@ -33,7 +33,7 @@ export default function GoldenParticles() {
 
         const initParticles = () => {
             particles = [];
-            const particleCount = Math.min(window.innerWidth * 0.1, 100); // Responsive count
+            const particleCount = Math.min(window.innerWidth * 0.05, 50); // Responsive count - Reduced for mobile perf
 
             for (let i = 0; i < particleCount; i++) {
                 particles.push({
@@ -82,8 +82,8 @@ export default function GoldenParticles() {
                 ctx.beginPath();
                 ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
                 ctx.fillStyle = `rgba(255, 215, 0, ${particle.alpha})`; // Gold color
-                ctx.shadowBlur = 10;
-                ctx.shadowColor = "rgba(255, 215, 0, 0.5)";
+                // ctx.shadowBlur = 10; // Removed for performance
+                // ctx.shadowColor = "rgba(255, 215, 0, 0.5)"; // Removed for performance
                 ctx.fill();
             });
 

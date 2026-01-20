@@ -22,10 +22,14 @@ export default function AboutSection() {
                                 <img
                                     src="/kebaya.webp"
                                     alt="Detail jahitan"
+                                    width={400}
+                                    height={300}
+                                    loading="lazy"
+                                    decoding="async"
                                     className="rounded-2xl shadow-2xl w-full h-64 object-cover transform hover:-translate-y-2 transition-transform duration-500 ring-1 ring-white/10"
                                 />
                                 <div className="bg-stone-900/80 backdrop-blur-md text-white p-6 rounded-2xl shadow-2xl border border-white/10">
-                                    <p className="font-serif text-4xl font-bold text-primary mb-1">10+</p>
+                                    <p className="font-serif text-4xl font-bold text-primary mb-1">14+</p>
                                     <p className="text-sm font-light text-white/80">Tahun Pengalaman</p>
                                 </div>
                             </div>
@@ -33,6 +37,10 @@ export default function AboutSection() {
                                 <img
                                     src="/kemeja-batik-pria.png"
                                     alt="Tekstur kain"
+                                    width={400}
+                                    height={500}
+                                    loading="lazy"
+                                    decoding="async"
                                     className="rounded-2xl shadow-2xl w-full h-80 object-cover transform hover:-translate-y-2 transition-transform duration-500 ring-1 ring-white/10"
                                 />
                             </div>
@@ -53,7 +61,7 @@ export default function AboutSection() {
 
                         <FadeIn delay={0.3}>
                             <p className="text-lg text-white/70 leading-relaxed font-light">
-                                <span className="text-white font-medium">Udin Busana Collection</span> didirikan pada tahun 2016 dengan satu visi: menghadirkan busana yang tidak hanya dipakai, tetapi dirasakan.
+                                <span className="text-white font-medium">Udin Busana Collection</span> didirikan pada tahun 2012 dengan satu visi: menghadirkan busana yang tidak hanya dipakai, tetapi dirasakan.
                             </p>
                         </FadeIn>
 
