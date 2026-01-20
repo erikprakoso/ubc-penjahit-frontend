@@ -77,9 +77,9 @@ export default function ServicesSection() {
 
                         <Tabs defaultValue="wanita" className="w-full">
                             <TabsList className="grid w-full grid-cols-3 mb-8 bg-black/20 p-1 rounded-xl h-auto">
-                                <TabsTrigger value="wanita" className="py-3 text-base data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-all">Busana Wanita</TabsTrigger>
-                                <TabsTrigger value="pria" className="py-3 text-base data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-all">Busana Pria</TabsTrigger>
-                                <TabsTrigger value="seragam" className="py-3 text-base data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-all">Seragam</TabsTrigger>
+                                <TabsTrigger value="wanita" className="py-2 sm:py-3 text-xs sm:text-base data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-all">Busana Wanita</TabsTrigger>
+                                <TabsTrigger value="pria" className="py-2 sm:py-3 text-xs sm:text-base data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-all">Busana Pria</TabsTrigger>
+                                <TabsTrigger value="seragam" className="py-2 sm:py-3 text-xs sm:text-base data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-all">Seragam</TabsTrigger>
                             </TabsList>
 
                             <TabsContent value="wanita" className="mt-0">

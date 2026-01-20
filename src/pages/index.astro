@@ -58,7 +58,7 @@ const schema = JSON.stringify({
 	<fragment slot="head">
 		<script type="application/ld+json" set:html={schema} />
 	</fragment>
-	<Hero client:load />
+	<Hero client:idle />
 	<AboutSection client:visible />
 	<ServicesSection client:visible />
 	<GallerySection client:visible />

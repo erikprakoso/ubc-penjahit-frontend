@@ -192,6 +192,10 @@
     @apply border-border;
   }
 
+  html, body {
+    overflow-x: hidden;
+  }
+
   body {
     background-image: radial-gradient(ellipse at top, var(--tw-gradient-stops));
     @apply bg-background text-foreground font-sans min-h-screen selection:bg-primary/20;

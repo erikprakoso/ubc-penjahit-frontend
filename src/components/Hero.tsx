@@ -41,7 +41,7 @@ export default function Hero() {
                 </FadeIn>
 
                 <FadeIn delay={0.4}>
-                    <h1 className="text-6xl md:text-8xl font-black tracking-tight text-white font-serif drop-shadow-2xl">
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tight text-white font-serif drop-shadow-2xl">
                         Udin Busana
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-400 to-orange-400 mt-2 italic pb-4">Collection</span>
                     </h1>

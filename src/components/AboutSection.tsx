@@ -4,7 +4,7 @@ import FadeIn from './animations/FadeIn';
 
 export default function AboutSection() {
     return (
-        <section id="about" className="py-32 bg-stone-950 relative">
+        <section id="about" className="py-32 bg-stone-950 relative overflow-hidden">
             {/* Decorative Elements */}
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-b from-stone-900/40 via-stone-900/20 to-transparent -skew-x-12 translate-x-32 z-0 pointer-events-none" />
@@ -17,7 +17,7 @@ export default function AboutSection() {
                     {/* Image Area - Asymmetrical & Floating */}
                     <div className="lg:col-span-7 relative group">
                         <div className="absolute -inset-4 bg-gradient-to-r from-primary via-red-400 to-orange-400 opacity-20 blur-3xl rounded-full group-hover:opacity-30 transition-opacity duration-700" />
-                        <FadeIn direction="right" className="relative z-10 grid grid-cols-2 gap-4">
+                        <FadeIn direction="right" className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="space-y-4 mt-12">
                                 <img
                                     src="/kebaya.webp"
