@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
                 <div className="relative overflow-hidden w-full mask-gradient-x">
                     <div className="flex gap-6 animate-marquee w-max py-4">
                         {[...reviews, ...reviews, ...reviews].map((review, i) => (
-                            <div key={i} className="w-[350px] md:w-[400px] p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-primary/50 transition-colors shrink-0">
+                            <div key={i} className="w-[350px] md:w-[400px] p-8 rounded-2xl bg-stone-900/80 border border-white/10 hover:border-primary/50 transition-colors shrink-0">
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white shrink-0 shadow-lg">
                                         <User className="w-6 h-6" />

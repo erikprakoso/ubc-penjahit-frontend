@@ -9,8 +9,8 @@ export default function Hero() {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-stone-950 pt-16">
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl opacity-40 pointer-events-none">
-                <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-[128px] animate-pulse" style={{ animationDuration: '4s' }}></div>
-                <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[128px] animate-pulse" style={{ animationDuration: '6s' }}></div>
+                <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '4s' }}></div>
+                <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '6s' }}></div>
             </div>
 
             {/* Golden Dust Particles */}
